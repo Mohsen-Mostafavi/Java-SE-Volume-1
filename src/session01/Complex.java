@@ -4,5 +4,4 @@ public class Complex {
     int i;
     int j;
     String s;
-
 }

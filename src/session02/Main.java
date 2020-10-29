@@ -1,0 +1,12 @@
+package session02;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        A a = new A();
+        a.f1 = "Moshtari";
+        a.m1();
+
+    }
+}

@@ -1,4 +1,4 @@
-package session02.exercise.Rozhin;
+package session02.exercise.rozhin;
 
 public class Buy {
     public static void main(String[] args) {

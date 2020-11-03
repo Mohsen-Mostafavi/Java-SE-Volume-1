@@ -1,4 +1,4 @@
-package session02;
+package session02.exercise.Rozhin;
 
 public class StoreKeeper {
     String name;

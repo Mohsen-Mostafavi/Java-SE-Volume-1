@@ -1,4 +1,4 @@
-package session01.exercise;
+package session01.exercise.farnaz;
 
 import java.util.Scanner;
 

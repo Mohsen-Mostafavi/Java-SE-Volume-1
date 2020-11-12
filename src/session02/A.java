@@ -2,15 +2,18 @@ package session02;
 
 public class A {
     String f1;
+    B b;
+    int i;
 
     void m1(){
-        B b = new B();
 
-        b.f2 = "Foroshandeh";
 
-        b.m2();
+    }
 
-        new B().m2();
+    void m2(){
+        System.out.println(i);
+        System.out.println(f1);
+
 
     }
 }

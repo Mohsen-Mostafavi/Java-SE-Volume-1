@@ -1,0 +1,87 @@
+
+Local Variables vs. Field (Instance variable)
+---------------------------------------------
+
+Java Memory Model & Management
+-------------------------------
+
+Heap and Stack in Java
+
+Call Stack & Stack Frame (Activation Record)
+---------------------------------------------
+Call Stack  --> per thread
+Stack Frame --> per method call
+Heap        --> per process
+
+JVM Process memory model
+
+StackOverFlow --> may be caused by ---> Incorrect Recursive Call 
+
+OutOfMemoryError --> may be cause by ---> Incorrect Large memory allocation
+
+Local variable rules
+----------------------
+
+1- Fields are allocated in Heap (as object)
+   Local variable are allocated in Call Stack (in method stack frame)
+
+2- Scope & Visibility
+
+class Test {
+
+   int i; // Field
+
+   void m() {
+
+	int i; // Local Variable
+
+        {
+	    int i; // NOOOOOO!!!!!
+        }
+
+   }
+
+}
+
+3- Initial Values
+
+Fields are always initialized by default!
+
+Local Variable doesn't have initial value!!!
+
+4- Creation and destruction
+
+local variable --> from begining of the block to the end of the block 
+field --> when object created, till object garbage collected!
+
+What is Garbage? (unreachable space)
+--------------------------------------
+
+Java Automatic Garbage Collection (GC) --> reclaim unreachable space
+
+Aliasing (more than one reference for one object)
+
+When GC Runs?
+
+Direct Call to Garbage Collector --> System.gc(); // Not recommended
+
+GC calls .finalize() method // Not recommended
+
+Customizing & Tuning heap & stack size 
+---------------------------------------
+-Xss<size>  set java thread stack size
+
+-Xms<size>  set initial Java heap size
+-Xmx<size>  set maximum Java heap size
+
+>java -Xmx8g MyProg <enter>
+
+What is max size?
+
+in 32-Bit JVMs --> 2^32 --> 4 GB in Theory (But Really about ~3.4 GB)
+
+in 64-Bit JVMs --> 2^64 --> Physical Memory 
+
+=====================================================================
+
+                           FINISH

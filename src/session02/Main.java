@@ -1,6 +1,5 @@
 package session02;
 
-import java.util.List;
 
 public class Main {
 

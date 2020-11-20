@@ -1,6 +1,6 @@
 package session03;
 
-public class Student {
+class Student {
     int i;
     double d;
     String s;
@@ -11,7 +11,7 @@ public class Student {
     }
 
 
-    public Student() {
+    Student() {
         // code
         System.out.println("An Object of Student created! (No argument constructor is running!)");
 
@@ -36,6 +36,10 @@ public class Student {
         this.i = another.i;
         this.d = another.d;
         this.s = another.s;
+
+    }
+
+    void m1(){
 
     }
 }

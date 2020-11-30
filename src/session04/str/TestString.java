@@ -12,14 +12,17 @@ public class TestString {
 
         //--------------------------------------------
 
-        StringBuffer sb = new StringBuffer("ABC");
-        System.out.println( sb.length() ); // 3
-        System.out.println( sb.capacity() ); // 3+16=19
+        StringBuffer sb = new StringBuffer();
+        sb.append("ABC");
+        System.out.println(sb.length()); // 3
+        System.out.println(sb.capacity() ); // 16
 
-        StringBuffer sb2 = new StringBuffer();
-        sb2.append("ABC");
-        System.out.println(sb2.length()); // 3
-        System.out.println(sb2.capacity() ); // 16
+
+        StringBuffer sb2 = new StringBuffer("ABC");
+        System.out.println( sb2.length() ); // 3
+        System.out.println( sb2.capacity() ); // 3+16=19
+
+
 
         StringBuffer sb3 = new StringBuffer(50);
         sb3.append("ABC");
@@ -32,6 +35,9 @@ public class TestString {
         sb3.trimToSize(); // reduce to actual size
         System.out.println( sb3.length() ); // 3
         System.out.println( sb3.capacity() ); // 3
+
+
+        StringBuilder stringBuilder = new StringBuilder();
 
     }
 

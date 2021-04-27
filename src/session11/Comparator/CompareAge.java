@@ -10,9 +10,9 @@ public class CompareAge implements Comparator<Human>{
 
         return Integer.compare( o1.getAge(), o2.getAge() );
 
-        // return (x < y) ? -1 : ((x == y) ? 0 : 1);
+//         return (o1.getAge() < o2.getAge()) ? -1 : ((o1.getAge() == o2.getAge()) ? 0 : 1);
 
-        // return o1.getAge() - o2.getAge();
+//         return o1.getAge() - o2.getAge();
 
     }
 

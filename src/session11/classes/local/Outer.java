@@ -81,6 +81,8 @@ public class Outer {
         I i =  outer.m3();
 
         i.process();
+
+        I i2 = outer.m4();
     }
 
 }

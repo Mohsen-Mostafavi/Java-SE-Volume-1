@@ -10,8 +10,8 @@ public class Test10Swallowing {
 
             Class.forName("notExists");
 
-        } catch(ClassNotFoundException e) {
-//      } catch(ClassNotFoundException ignore) {
+//        } catch(ClassNotFoundException e) {
+        } catch(ClassNotFoundException ignore) {
 
             // ???
 

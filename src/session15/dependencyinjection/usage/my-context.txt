@@ -1,0 +1,4 @@
+#id=impl_class
+bank=session15.dependencyinjection.usage.MeliImpl
+
+
